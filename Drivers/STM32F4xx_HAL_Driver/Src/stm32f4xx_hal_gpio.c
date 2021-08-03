@@ -426,6 +426,7 @@ void HAL_GPIO_WritePin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, GPIO_PinState Pin
   * @param  GPIOx Where x can be (A..K) to select the GPIO peripheral for STM32F429X device or
   *                      x can be (A..I) to select the GPIO peripheral for STM32F40XX and STM32F427X devices.
   * @param  GPIO_Pin Specifies the pins to be toggled.
+  This parameter can be one of GPIO_PIN_x where x can be (0..15).
   * @retval None
   */
 void HAL_GPIO_TogglePin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)
